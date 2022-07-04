@@ -1,0 +1,22 @@
+{
+  "name": "teach-o-pedia",
+  "version": "1.0.0",
+  "description": "An app for teachers and students",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
+  }
+}
