@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-container {
+  padding: 1rem 0;
+  height: 10vh;
+}
+
+.form {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 1rem 0;
+}
+.form label {
+  font-family: "Roboto", "sans-serif";
+  color: black;
+}
+.form select {
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  color: #0c0d0c;
+  font-family: "Roboto", "sans-serif";
+  margin: 0.3rem 0;
+  border: 1.5px solid black;
+  margin: 0 0.5rem;
+  width: 60%;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 1.7rem;
+}
+
+.navbar-nav {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 600;
+}
+
+.nav-link {
+  color: black;
+}
+
+.submit {
+  display: flex;
+  border-radius: 1rem;
+  font-family: "Roboto", "sans-serif";
+  text-align: center;
+  align-items: center;
+  padding: 0.2rem 2rem;
+  margin: 0;
+}
+
+.top-container {
+  padding: 0.5rem 1.5rem;
+  background-image: linear-gradient(45deg, hsl(302deg, 93%, 77%) 0%, hsl(315deg, 100%, 77%) 11%, hsl(325deg, 100%, 76%) 22%, hsl(336deg, 100%, 76%) 33%, hsl(348deg, 100%, 77%) 44%, hsl(1deg, 100%, 78%) 56%, hsl(13deg, 100%, 75%) 67%, hsl(21deg, 100%, 73%) 78%, hsl(27deg, 100%, 71%) 89%, hsl(33deg, 93%, 69%) 100%);
+  background-size: cover;
+  width: 100%;
+}
+
+@media only screen and (max-width: 40em) {
+  .collapse {
+    display: block;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .form label {
+    margin-bottom: 0.5rem;
+  }
+  .form select {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-container {
+    padding: 0.2rem 0;
+    height: auto;
+  }
+}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .collapse {
+    display: block;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+.booking-button {
+  padding: 0 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid #0074d9;
+  color: white;
+  background-color: #0074d9;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.booking-button:hover {
+  background: transparent;
+  border: 1px solid #0074d9;
+  color: #0074d9;
+}
+
+.close {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.description {
+  margin-top: 0.8rem;
+}
+.description button {
+  margin-top: 0.5rem;
+}
+
+.image-part img {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.link-button {
+  padding: 0 0.8rem;
+  border-radius: 1rem;
+  background: transparent;
+  border: 1px solid #0074d9;
+  color: #0074d9;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.link-button:hover {
+  color: white;
+  background-color: #0074d9;
+}
+
+.time-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.time-part p {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+}
+
+.user {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.user h4 {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.user p {
+  font-family: "Roboto", "sans-serif";
+}
+
+.user-container {
+  padding: 1rem 0;
+}
+
+.user-part {
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 40em) {
+  .user {
+    padding: 1rem 2rem;
+  }
+
+  .card {
+    margin: 0.2rem 0;
+  }
+
+  .user-part {
+    margin: 0.2rem 0;
+  }
+}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .user {
+    padding: 1rem 1.5rem;
+  }
+
+  .card {
+    margin: 0.2rem 0;
+  }
+
+  .user-part {
+    padding: 1.5rem 1.2rem;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues *//*# sourceMappingURL=dashboard.css.map */
