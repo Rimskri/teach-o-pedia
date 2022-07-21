@@ -1,0 +1,165 @@
+<%- include("partials/header"); -%>
+
+<section class="container-fluid main-conatiner d-flex flex-wrap">
+  <!-- * Right Container -->
+  <div class="right-container">
+    <h2 id="logo">Teach-O-Pedia</h2>
+    <div class="big-container">
+      <!-- Small Container One -->
+      <div class="sm-containers">
+        <div class="gif-container">
+          <img
+            class="gif-image"
+            src="./images/social-care-unscreen.gif"
+            alt="icon"
+          />
+        </div>
+        <div class="description">
+          <h4>About Us</h4>
+          <p>
+            This website provides assitance to students to find quality teachers
+            according to their educational requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Small Container Two -->
+
+      <div class="sm-containers">
+        <div class="gif-container">
+          <img
+            class="gif-image"
+            src="./images/cloud-network-unscreen.gif"
+            alt="icon"
+          />
+        </div>
+        <div class="description">
+          <h4>Online and Offline Mode</h4>
+          <p>
+            Classes can be conducted either in online or offline mode in accordance to both students and teachers convenience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Small Container Three -->
+
+      <div class="sm-containers">
+        <div class="gif-container">
+          <img
+            class="gif-image"
+            src="./images/money-bag-unscreen.gif"
+            alt="icon"
+          />
+        </div>
+        <div class="description">
+          <h4>Pocket Friendly Fees</h4>
+          <p>
+            Students can pay according to their booking appointments after consulting their respective tutors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- * Left Container -->
+  <div class="left-container d-flex flex-column justify-content-center">
+    <div>
+      <h3>Sign Up</h3>
+      <hr />
+    </div>
+    <div class="form-container">
+      <form name="signin-form" action="/" method="post">
+        <!-- Type -->
+        <label for="type">Registering as:</label><br />
+        <input type="radio" name="type" id="teacher" value="Teacher" checked />
+        <label for="teacher">Teacher</label>
+        <input type="radio" name="type" id="student" value="Student" />
+        <label for="student">Student</label><br />
+        <!-- Name -->
+        <label for="name">Enter your name</label><br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <!-- E-mail -->
+        <label for="email">Enter your email id</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+        <!-- Mobile -->
+        <label for="mobile">Enter Mobile no.</label><br />
+        <input
+          type="tel"
+          name="mobile"
+          id=""
+          minlength="10"
+          maxlength="10"
+          pattern="[0-9]{10}"
+          placeholder="Enter mobile no."
+          required
+        /><br />
+        <!-- Password -->
+        <label for="password">Create new password</label><br />
+        <input
+          type="password"
+          name="password"
+          id=""
+          minlength="8"
+          maxlength="12"
+          placeholder="Enter new password"
+          required
+        /><br />
+        <div id="teacher-part">
+          <label for="subject">Specialized Subject</label>
+          <select class="additional-part" name="subject" id="sub" required>
+            <option value="">-- Please choose subject --</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Physical Science">Physical Science</option>
+            <option value="Life Science">Life Science</option>
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+            <option value="Bengali">Bengali</option>
+            <option value="English">English</option>
+            <option value="Computer Science">Computer Science</option>
+          </select>
+        </div>
+        <div id="student-part">
+          <label for="student-class">Choose your class</label>
+          <select
+            class="additional-part"
+            name="student-class"
+            id="cls"
+            required
+          >
+            <option value="" selected>Select</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <button class="submit btn btn-primary" type="submit">Sign Up</button>
+      </form>
+    </div>
+    <p class="forward-link">
+      Already have an account? <a href="/login">Login</a>
+    </p>
+  </div>
+</section>
+
+<!-- BootStrap JS CDN -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"
+></script>
+<!-- Core js file -->
+<script src="/javascript/signin.js"></script>
+
+<%- include("partials/footer"); -%>

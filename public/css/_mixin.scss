@@ -1,0 +1,13 @@
+@mixin additional {
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    color: #0c0d0c;
+    font-family: $f-roboto;
+    margin: 0.3rem 0;
+    border: 1.5px solid black;
+}
+
+@mixin logo {
+    font-family: "Pacifico", cursive;
+    font-size: 1.7rem;
+}
